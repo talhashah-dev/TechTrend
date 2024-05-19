@@ -75,16 +75,26 @@ section {
   gap: 10px;
 }
 
-section .card-container {
+.card-container {
   display: flex;
   gap: 10px;
 }
 
-section .card-container .card {
+.card-container .card {
   height: 300px;
   width: 350px;
   background: gray;
+  padding: 10px;
 }
+
+.card-container .card .news-img {
+  width: 100%;  
+}
+
+.card-container .card .card-content {
+  display: flex;
+}
+
 
 
 
@@ -110,4 +120,24 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
